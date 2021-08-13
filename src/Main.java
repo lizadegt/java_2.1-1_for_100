@@ -1,29 +1,29 @@
 public class Main {
     public static void main(String[] args) {
-        int initial_account = 100;
-        int replenishment_amount1 = 100;
-        int replenishment_amount2 = 1100;
-        int final_account1;
+        int initialAccount = 100;
+        int replenishmentAmount1 = 100;
+        int replenishmentAmount2 = 1100;
+        int finalAccount1;
         int bonus1;
-        int final_account2;
+        int finalAccount2;
         int bonus2;
-        if (replenishment_amount1 > 1000) {
-            bonus1 = replenishment_amount1 / 100;
-            final_account1 = initial_account + replenishment_amount1 + bonus1;
+        if (replenishmentAmount1 > 1000) {
+            bonus1 = replenishmentAmount1 / 100;
+            finalAccount1 = initialAccount + replenishmentAmount1 + bonus1;
         } else {
             bonus1 = 0;
-            final_account1 = initial_account + replenishment_amount1;
+            finalAccount1 = initialAccount + replenishmentAmount1;
         }
-        if (replenishment_amount2 > 1000) {
-            bonus2 = replenishment_amount2 / 100;
-            final_account2 = initial_account + replenishment_amount2 + bonus2;
+        if (replenishmentAmount2 > 1000) {
+            bonus2 = replenishmentAmount2 / 100;
+            finalAccount2 = initialAccount + replenishmentAmount2 + bonus2;
         } else {
             bonus2 = 0;
-            final_account2 = initial_account + replenishment_amount2;
+            finalAccount2 = initialAccount + replenishmentAmount2;
         }
         System.out.println(bonus1);
-        System.out.println(final_account1);
+        System.out.println(finalAccount1);
         System.out.println(bonus2);
-        System.out.println(final_account2);
+        System.out.println(finalAccount2);
     }
 }
