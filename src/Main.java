@@ -1,17 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int initial_account = 100;
-        int replenishment_amount = 100;
-        int final_account;
+        int initialAccount = 100;
+        int replenishmentAmount = 100;
+        int finalAccount;
         int bonus;
-        if (replenishment_amount > 1000) {
-            bonus = replenishment_amount / 100;
-            final_account = initial_account + replenishment_amount + bonus;
+        if (replenishmentAmount > 1000) {
+            bonus = replenishmentAmount / 100;
+            finalAccount = initialAccount + replenishmentAmount + bonus;
         } else {
             bonus = 0;
-            final_account = initial_account + replenishment_amount;
+            finalAccount = initialAccount + replenishmentAmount;
         }
         System.out.println(bonus);
-        System.out.println(final_account);
+        System.out.println(finalAccount);
     }
 }
